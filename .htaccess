@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^(css|img|js|fonts|media)/(.+)$ public/$1/$2 [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,NC,L]
