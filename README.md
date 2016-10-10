@@ -28,7 +28,8 @@ $mod["content"] = $parser->parse("index",$data,true);
 
 //parse index view into site view, and send to the screen
 $parser->parse("site",array_merge($data,$mod));
+```
 
-### Issued
+### Issues
 
 It's necessary to include parse class, instead of that use autoloaders.
